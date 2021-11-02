@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Калькулятор</string>
+    <string name="lbl_num1">Число</string>
+    <string name="lbl_num2">Число</string>
+    <string name="lbl_sum">Сумма</string>
+    <string name="menu">История</string>
+    <string name="button">Рассчитать</string>
+    <string name="clear_screen">Очистить поле</string>
+    <string name="show_db">Вывести БД</string>
+    <string name="start_mess">Старт</string>
+    <string name="stop_mess">Стоп</string>
+
+    <string name="pref_color_key_switch" translatable="false">pref_color_switch</string>
+    <string name="pref_color_switch">Изменить цвет?</string>
+    <string name="pref_color_switch_summ">Использовать цвет из списка ниже?</string>
+    <string name="pref_color_key" translatable="false">pref_color</string>
+    <string name="log_file_name" translatable="false">logFile.txt</string>
+    <string name="show_file_content">Вывести список</string>
+    <string name="pref_color_title">Выбрать цвет</string>
+    <string name="pref_color_red">Зеленый</string>
+    <array name="pref_colors">
+        <item>Голубой</item>
+        <item>Зеленый</item>
+        <item>Красный</item>
+    </array>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/open_history"
+        android:orderInCategory="1"
+        android:title="@string/menu" />
+    <item
+        android:id="@+id/open_service"
+        android:orderInCategory="2"
+        android:title="Сервис" />
+    <item
+        android:id="@+id/open_browser"
+        android:orderInCategory="3"
+        android:title="Браузер" />
+    <item
+        android:id="@+id/open_intent"
+        android:orderInCategory="4"
+        android:title="Интент" />
+    <item
+        android:id="@+id/open_file"
+        android:orderInCategory="5"
+        android:title="Файл" />
+    <item
+        android:id="@+id/open_db"
+        android:orderInCategory="6"
+        android:title="База данных" />
+    <item
+        android:id="@+id/open_SharedPreference"
+        android:orderInCategory="7"
+        android:title="SharedPreference" />
+</menu>

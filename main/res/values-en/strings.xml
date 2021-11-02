@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="lbl_num1">Number</string>
+    <string name="lbl_num2">Number</string>
+    <string name="lbl_sum">Sum</string>
+    <string name="menu">History</string>
+    <string name="button">Calculate</string>
+    <string name="clear_screen">Clear screen</string>
+    <string name="show_db">Show db</string>
+    <string name="start_mess">Start</string>
+    <string name="stop_mess">Stop</string>
+
+    <string name="pref_color_key_switch" translatable="false">pref_color_switch</string>
+    <string name="pref_color_switch">Override color?</string>
+    <string name="pref_color_switch_summ">Use non-default color from list below?</string>
+    <string name="pref_color_key" translatable="false">pref_color</string>
+
+    <string name="show_file_content">Show file</string>
+    <string name="pref_color_title">Choose color</string>
+    <string name="pref_color_red">Green</string>
+    <array name="pref_colors">
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Red</item>
+    </array>
+</resources>
