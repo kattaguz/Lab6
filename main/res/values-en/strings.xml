@@ -18,7 +18,7 @@
 
     <string name="show_file_content">Show file</string>
     <string name="pref_color_title">Choose color</string>
-    <string name="pref_color_red">Green</string>
+    <string name="pref_color_green">Green</string>
     <array name="pref_colors">
         <item>Blue</item>
         <item>Green</item>
