@@ -18,7 +18,7 @@
 
     <string name="show_file_content">Вывести список</string>
     <string name="pref_color_title">Выбрать цвет</string>
-    <string name="pref_color_red">Зеленый</string>
+    <string name="pref_color_green">Зеленый</string>
     <array name="pref_colors">
         <item>Голубой</item>
         <item>Зеленый</item>
