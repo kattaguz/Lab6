@@ -14,8 +14,10 @@ import android.widget.TextView;
  * Use the {@link AddFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AddFragment extends Fragment implements View.OnClickListener {
+public class AddFragment extends Fragment implements View.OnClickListener, SharedPreferences.OnSharedPreferenceChangeListener {
 
+    SharedPreferences prefs;
+    private int color;
 
     private EditText Num1;
     private EditText Num2;
@@ -42,11 +44,37 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         Num1 = view.findViewById(R.id.num1_editText);
         Num2 =  view.findViewById(R.id.num2_editText);
         result = view.findViewById(R.id.result_text_add);
+        
+        prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());// регистр выбора слушает
+        prefs.registerOnSharedPreferenceChangeListener(this);
+        setColor(); //XML больше не подключается
 
         Button addButton = view.findViewById(R.id.button_add);
         addButton.setOnClickListener(this);
         return view;
     }
+    
+     private void setColor() {
+        String colorName = prefs.getString(getString(R.string.pref_color_key), "Green");
+        switch (colorName) {
+            case "Blue":
+                color = Color.BLUE;
+                break;
+            case "Green":
+                color = Color.GREEN;
+                break;
+            case "Red":
+                color = Color.RED;
+                break;
+            default:
+                break;
+        }
+        Num1.setTextColor(color);
+        Num2.setTextColor(color);
+        result.setTextColor(color);
+
+    }
+    
     @Override
     public void onClick(View v) {
         Integer x = Integer.parseInt(Num1.getText().toString());
@@ -62,5 +90,12 @@ public class AddFragment extends Fragment implements View.OnClickListener {
         String resultString = String.format("%1d",result);
         MainActivity parent = (MainActivity)getActivity();
         parent.addToHistory(new HistoryItem(operand1String, operand2String, function, resultString));
+    }
+    
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String s) {
+        if (s.equals(getString(R.string.pref_color_key))) {
+            setColor();
+        }
     }
 }
